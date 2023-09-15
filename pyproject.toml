@@ -27,8 +27,8 @@ dependencies = []
 [project.optional-dependencies]
 
 [project.urls]
-"Homepage" = "https://github.com/jgriesfeller/pyiconv"
-"Bug Tracker" = "https://github.com/jgriesfeller/pyiconv/issues"
+"Homepage" = "https://github.com/metno/pyiconv"
+"Bug Tracker" = "https://github.com/metno/pyiconv/issues"
 
 [project.scripts]
 pyiconv = "pyiconv.cli.pyiconv:main"

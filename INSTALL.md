@@ -3,10 +3,10 @@
 Standard installation is done via pip:
 
 ```bash
-python -m pip install 'git@github.com:jgriesfeller/pyiconv.git'
+python -m pip install 'https://github.com/metno/pyiconv.git'
 ```
 
 For a different branch than main
 ```bash
-python -m pip install 'git@github.com:jgriesfeller/pyiconv.git@<branch name>'
+python -m pip install 'https://github.com/metno/pyiconv.git@<branch name>'
 ```
