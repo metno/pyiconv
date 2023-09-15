@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyiconv"
+version = "0.1.2"
+authors = [{ name = "MET Norway" }]
+description = "simple python based replacement for iconv also supporting weird encodings"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+
+[project.urls]
+"Homepage" = "https://github.com/jgriesfeller/pyiconv"
+"Bug Tracker" = "https://github.com/jgriesfeller/pyiconv/issues"
+
+[project.scripts]
+pyiconv = "pyiconv.cli.pyiconv:main"
+
