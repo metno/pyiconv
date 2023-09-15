@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyiconv"
-version = "0.1.2"
+version = "0.2.0"
 authors = [{ name = "MET Norway" }]
 description = "simple python based replacement for iconv also supporting weird encodings"
 readme = "README.md"
