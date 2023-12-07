@@ -33,3 +33,34 @@ dependencies = []
 [project.scripts]
 pyiconv = "pyiconv.cli.pyiconv:main"
 
+[tool.mypy]
+python_version = "3.9"
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = false
+warn_unreachable = true
+show_error_codes = true
+pretty = true
+sqlite_cache = true
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+min_version = 4.0
+skip_missing_interpreters = True
+isolated_build = True
+
+envlist =
+    py311
+    format
+
+[testenv]
+commands = python3 -m unittest discover -s tests
+
+[testenv:format]
+commands =
+    pre-commit run --all-files --show-diff-on-failure
+deps =
+    pre-commit
+"""

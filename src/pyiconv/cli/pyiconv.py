@@ -24,7 +24,10 @@ def main():
         default=DEFAULT_FROM_ENCODING,
     )
     parser.add_argument(
-        "-t", "--to-code", help="Specifies the encoding of the input.", default=DEFAULT_TO_ENCODING
+        "-t",
+        "--to-code",
+        help="Specifies the encoding of the input.",
+        default=DEFAULT_TO_ENCODING,
     )
     parser.add_argument("--list", help="list encodings and exit.", action="store_true")
 
